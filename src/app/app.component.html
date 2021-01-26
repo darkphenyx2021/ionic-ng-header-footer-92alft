@@ -1,17 +1,173 @@
+<!-- @ionic/core@latest https://ionicframework.com/docs/ -->
+
 <ion-app>
-  <ion-header>
-    <ion-toolbar>
-      <ion-title>Header</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  
+  <ion-split-pane content-id="content">
+  
+    <ion-menu content-id="content">
+      <ion-content class="ion-padding">
+        <ion-item button detail="false" lines="none">
+          <ion-label>
+            <ion-icon name="home-outline"></ion-icon><br />
+            Home
+          </ion-label>
+        </ion-item>
+        
+        <ion-item button detail="false" lines="none">
+          <ion-label>
+            <ion-icon name="create-outline"></ion-icon><br />
+            New Claim
+          </ion-label>
+        </ion-item>
+        
+        <ion-item button detail="false" lines="none">
+          <ion-label>
+            <ion-icon name="document-text-outline"></ion-icon><br />
+            My Claims
+          </ion-label>
+        </ion-item>
+        
+        <ion-item button detail="false" lines="none">
+          <ion-label>
+            <ion-icon name="person-outline"></ion-icon><br />
+            My Coverage
+          </ion-label>
+        </ion-item>
+        
+        <ion-item button detail="false" lines="none">
+          <ion-label>
+            <ion-icon name="chatbox-outline"></ion-icon><br />
+            Contact Us
+          </ion-label>
+        </ion-item>
+        
+        <ion-item button detail="false" lines="none">
+          <ion-label>
+            <ion-icon name="mail-outline"></ion-icon><br />
+            Messages
+          </ion-label>
+        </ion-item>
+        
+        
+      </ion-content>
+    </ion-menu>
 
-  <ion-content class="ion-padding">
-    <h1>Main Content</h1>
-  </ion-content>
+    <div class="ion-page" id="content">
+      <ion-header>
+        <div class="mobile">
+          <ion-toolbar>
+            <ion-buttons slot="start">
+              <ion-menu-button></ion-menu-button>
+            </ion-buttons>
+            <ion-title>Header</ion-title>
 
-  <ion-footer>
-    <ion-toolbar>
-      <ion-title>Footer</ion-title>
-    </ion-toolbar>
-  </ion-footer>
+            <ion-buttons slot="end">            
+              <ion-button slot="icon-only">
+                <ion-icon name="chatbox-outline"></ion-icon>
+              </ion-button>
+
+              <ion-button slot="icon-only">
+                <ion-icon name="search-outline"></ion-icon>
+              </ion-button>
+            </ion-buttons>
+          </ion-toolbar>
+        </div>
+        <div class="desktop">
+          <ion-toolbar>
+            <div class="logo">LOGO</div>
+            
+            <div class="account">
+              <ion-item lines="none" class="ion-text-left">
+                <ion-icon slot="start" name="chatbox-outline"></ion-icon>
+                <ion-label>Chat Us</ion-label>
+              </ion-item>
+              
+              <ion-item lines="none" class="ion-text-left">
+                <ion-icon slot="end" name="chevron-down-outline"></ion-icon>
+                <ion-label>English</ion-label>
+              </ion-item>
+              
+              <ion-item lines="none">
+                <ion-icon slot="end" name="chevron-down-outline"></ion-icon>
+                <ion-label>Liam</ion-label>
+              </ion-item>
+            </div>
+            
+            <div class="search">
+              <ion-searchbar></ion-searchbar>
+            </div>            
+          </ion-toolbar>
+        </div>
+      </ion-header>
+
+      <ion-content class="ion-padding">        
+        <div class="cards">
+          <div class="col">
+            <ion-card class="size-medium">
+              <ion-card-header>
+                <ion-card-title>My Title</ion-card-title>
+              </ion-card-header>
+
+              <ion-card-content>
+                My Content
+              </ion-card-content>
+            </ion-card>
+
+            <ion-card class="size-large">
+              <ion-card-header>
+                <ion-card-title>My Title</ion-card-title>
+              </ion-card-header>
+
+              <ion-card-content>
+                My Content
+              </ion-card-content>
+            </ion-card>
+
+            <ion-card class="size-small">
+              <ion-card-header>
+                <ion-card-title>My Title</ion-card-title>
+              </ion-card-header>
+
+              <ion-card-content>
+                My Content
+              </ion-card-content>
+            </ion-card>
+          </div>
+          <div class="col">
+            <ion-card class="size-large">
+              <ion-card-header>
+                <ion-card-title>My Title</ion-card-title>
+              </ion-card-header>
+
+              <ion-card-content>
+                My Content
+              </ion-card-content>
+            </ion-card>
+
+            <ion-card class="size-small">
+              <ion-card-header>
+                <ion-card-title>My Title</ion-card-title>
+              </ion-card-header>
+
+              <ion-card-content>
+                My Content
+              </ion-card-content>
+            </ion-card>
+
+            <ion-card class="size-medium">
+              <ion-card-header>
+                <ion-card-title>My Title</ion-card-title>
+              </ion-card-header>
+
+              <ion-card-content>
+                My Content
+              </ion-card-content>
+            </ion-card>
+          </div>
+        </div>
+      </ion-content>
+    </div>
+    
+  </ion-split-pane>
+    
 </ion-app>

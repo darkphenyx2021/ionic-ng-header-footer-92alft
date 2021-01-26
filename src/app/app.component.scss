@@ -1,0 +1,87 @@
+ion-split-pane {
+  --side-width: 125px;
+  --side-max-width: 125px;
+  --side-min-width: 125px;
+}
+ion-menu ion-item {
+  --padding-start: 0px;  
+  --inner-padding-end: 0px;
+  --border-radius: 4px;
+
+  margin-bottom: 16px;
+  
+  text-align: center;
+  font-size: 14px;
+}
+ion-menu ion-item ion-icon {
+  font-size: 24px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  
+  max-width: 1024px;
+  
+  margin: 0 auto;
+}
+.cards ion-card {
+  margin-bottom: 20px;
+}
+.cards ion-card.size-large {
+  height: 300px;
+}
+.cards ion-card.size-medium {
+  height: 200px;
+}
+.cards ion-card.size-small {
+  height: 100px;
+}
+
+ion-header .desktop ion-toolbar {
+  padding: 20px;
+}
+ion-header .desktop .logo {
+  height: 50px;
+  width: 150px;
+  
+  color: white;
+  background: gray;
+
+  text-align: center;
+  line-height: 50px;
+  float: left;
+}
+ion-header .desktop .search,
+ion-header .desktop .account {
+  float: right;
+}
+
+ion-header .desktop .search {
+  margin-right: 20px;
+  width: 250px;
+}
+
+.account ion-item {
+  display: inline-block;
+  text-align: left;
+}
+.account ion-icon[slot="end"] {
+  margin-inline-start: 2px;
+  
+  font-size: 16px;
+}
+.account ion-icon[slot="start"] {
+  margin-inline-end: 6px;
+}
+
+@media screen and (min-width: 992px) {
+  .mobile {
+    display: none;
+  }
+}
+@media screen and (max-width: 991px) {
+  .desktop { 
+    display: none;
+  }
+}
